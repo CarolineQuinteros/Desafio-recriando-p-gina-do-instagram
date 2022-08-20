@@ -1,160 +1,162 @@
 *{
-    preenchimento: 0;
-    margem: 0;
-    tamanho de caixa: border-box;
-    text-decoração: nenhum;
-    fonte-família: sans-serif;
-    tamanho da fonte: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
 
 }
-corpo{
-    largura: 100%;
-    min-altura: 100vh;
-    cor de fundo: rgb (243, 243, 243);
-    margem: 0;
-    preenchimento: 0;
+
+body{
+    width: 100% ;
+    min-height: 100vh;
+    background-color: rgb(243, 243,243) ;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justificar-conteúdo: centro;
+    justify-content: centro;
 }
-. instagram-wrapper{
+.instagramok{
     display: flex;
-    itens de alinhamento: centro;
-    justificar-conteúdo: iniciar;
-    largura: 60%;
-    altura: 100vh;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
 
 }
 
-. instagram-telefone{
+.instagram-phone{
     display: flex;
-    itens de alinhamento: centro;
-    justificar-conteúdo: centro;
-    largura: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
 }
 
-. instagram-telefone img{
-    altura: 50rem;
-    top de enchimento: 30px;
-    margem-direita: 30px;
-}
-
-. instagram-continuar{
-    display: flex;
-    itens de alinhamento: centro;
-    conteúdo-justificativa: espaço-em torno;
-    flex-direção: coluna;
-    largura: 50%;
-    altura: 34rem;
-}
-
-. grupo{
-    display: flex;
-    conteúdo-justificativa: espaço-entre;
-    itens de alinhamento: centro;
-    flex-direção: coluna;
-    cor de fundo: branco;
-    largura: 100%;
-    preenchimento: 1,3rem 0;
-    borda: 1px leve sólido;
-}
-
-. grupo:nth-child(1){
-    min-height: 19rem;
-
-}
-
-. instagram-logotipo{
-    altura: 3rem;
-}
-
-. perfil-foto{
-    display: flex;
-    justificar-conteúdo: centro;
-    itens de alinhamento: centro;
-    raio-fronteira: 50%;
-    estouro: escondido;
+.instagram-phone img{
+    height: 50rem;
     
 }
 
-. perfil-foto img{
-    altura: 6rem;
-}
-
-. instagram-login{
-    cor de fundo: #0095f6;
-    cor: branco;
-    preenchimento: 8px;
-    raio-fronteira: 4px;
-}
-
-. instagram-logout{
-    cor: #0095f6;
-    margem-topo: 1rem;
-}
-
-. não-conta{
-    cor: rgb (160, 160, 160);
-
-}
-
-. link-azul{
-    cor: #0095f6;
-}
-
-
-. get-the-app{
+.instagram-continue{
     display: flex;
-    flex-direção: coluna;
-    itens de alinhamento: centro;
-    justificar-conteúdo: centro;
-    largura: 100%;
-    preenchimento: 1,3rem 0;
+    align-items: center; /* horizontal*/
+    justify-content: space-around; /* vertical*/
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
 }
 
-. baixar{
+.group{
     display: flex;
-    largura: 100%;
-    justificar-conteúdo: espaço-uniforme;
-    itens de alinhamento: centro;
-    preenchimento: 1rem;
-}
-. app-download{
-    altura: 3rem;
-    largura: 10rem;
-    tamanho de fundo: cobertura;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    padding: 1,3rem 0;
+    border: 1px solid lightgray;
 }
 
-. app-download:nth-child(1){
-    imagem de fundo: url ('./img/apple-button.png');
-}
-. app-download:nth-child(2){
-    imagem de fundo: url ('./img/googleplay-button.png');
+.group,:nth-child(1){
+    min-height: 19rem;
 }
 
-@media (largura máxima: 1024px){
- . instagram-wrapper{
-        largura: 90%;
+.instagram-logo{
+    height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; 
+    
+}
+
+.perfil-profile img{
+    width: 6rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color:white;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not.account{
+    color:rgb(160, 160, 160);
+
+
+}
+
+.link-azul{
+    color: #0095f6;
+}
+
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1,3rem 0;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1){
+    background-image: url('/img.png/apple-button.png')
+}
+.app-download:nth-child(2){
+    background-image: url('/img.png/googleplay-button.png')
+}
+
+@media (max-width: 1024px){
+ .instagram-wrapper{
+        width: 90%;
     }
 
 }
 
-@media (largura máxima: 650px){
-    corpo{
-        cor de fundo: branco;
+@media (max-width: 650px){
+    .body {
+        background-color: white;
     }
- . instagram-wrapper{
-        largura: 90%;
+    .instagram-wrapper{
+        width: 90px;
     }
- . instagram-telefone{
-        exibição: nenhum;
+    
+ .instagram-wrapper{
+        width: 90%;
     }
- . instagram-continuar{
-        largura: 100%;
+ .instagram-phone{
+        display: none;
     }
- . grupo{
-        fronteira: nenhuma;
+ .instagram-continue{
+        width: 100%;
+    }
+ .group{
+        border: lightpink solid transparent;
     }
 
 }
-Rodapé
-© 2022 GitHub, Inc.
