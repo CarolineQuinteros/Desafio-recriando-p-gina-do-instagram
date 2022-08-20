@@ -1,6 +1,6 @@
 Desafio do DIO 💻
 --------------------------------------------
-Desafio da dio Recriar a página do instagram.
+Recriar a página do instagram.
 
 - utilizando Flex-box
 - Responsivo
